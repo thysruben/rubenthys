@@ -29,6 +29,7 @@
     font-weight: 100;
     margin: 0 10px;
     color: white;
+    transition: color 0.2s ease;
 }
 
 .links a:hover {
