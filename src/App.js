@@ -14,13 +14,13 @@ class App extends Component {
         </div>
         <div className="links">
           <a href="https://twitter.com/rubenthys22">
-            <FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon> Twitter
+            <FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>
           </a>
           <a href="https://github.com/thysruben">
-            <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon> GitHub
+            <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
           </a>
           <a href="https://blog.rubenthys.me">
-            <FontAwesomeIcon icon={faRss}></FontAwesomeIcon> Blog
+            <FontAwesomeIcon icon={faRss}></FontAwesomeIcon>
           </a>
         </div>
       </div>
