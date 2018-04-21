@@ -10,5 +10,5 @@ html, body, #root {
 body {
   margin: 0;
   padding: 0;
-  font-family: OpenSans-Regular;
+  font-family: OpenSans-Regular, Helvetica, sans-serif;
 }
