@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-import { faRss } from '@fortawesome/fontawesome-free-solid';
+import { faRss, faEnvelope } from '@fortawesome/fontawesome-free-solid';
 import { faTwitter, faGithub } from '@fortawesome/fontawesome-free-brands'
 
 class App extends Component {
@@ -22,7 +22,10 @@ class App extends Component {
           <a href="https://blog.rubenthys.me">
             <FontAwesomeIcon icon={faRss}></FontAwesomeIcon>
           </a>
-        </div>
+          <a href="mailto:hello@rubenthys.me">
+            <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>
+          </a>
+          </div>
       </div>
     );
   }
