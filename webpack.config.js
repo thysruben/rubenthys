@@ -1,13 +1,18 @@
 const path = require('path')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-    entry: './src/index.js',
+    entry: [
+        '@babel/polyfill',
+        './src/index.js'
+    ],
     output: {
-        'path': path.resolve(__dirname, 'dist'),
-        'publicPath': '/',
-        'filename': 'bundle.js'
+        globalObject: 'this',
+        path: path.resolve(__dirname, 'dist'),
+        publicPath: '/dist/',
+        filename: 'bundle.js'
     },
     module: {
         rules: [
@@ -17,7 +22,7 @@ module.exports = {
             },
             {
                 test: /\.m?js$/,
-                exclude: /(node_modules)/,
+                exclude: /node_modules/,
                 loader: 'babel-loader',
                 options: {
                     presets: ['@babel/preset-env']
@@ -43,6 +48,7 @@ module.exports = {
         hotOnly: true
     },
     plugins: [
+        new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             template: './public/index.html',
             path: path.resolve(__dirname, 'dist'),
