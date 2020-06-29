@@ -11,7 +11,7 @@ module.exports = {
     output: {
         globalObject: 'this',
         path: path.resolve(__dirname, 'dist'),
-        publicPath: '/dist/',
+        publicPath: '/',
         filename: 'bundle.js'
     },
     module: {
@@ -39,12 +39,12 @@ module.exports = {
         ]
     },
     resolve: {
-        extensions: ['.wasm', '.ts', '.tsx', '.mjs', '.cjs', '.js', '.json']
+        extensions: ['.wasm', '.ts', '.tsx', '.mjs', '.cjs', '.js', '.json'],
+        modules: ['node_modules', 'src']
     },
     devServer: {
-        contentBase: path.join(__dirname, 'public/'),
+        contentBase: './dist',
         port: 3000,
-        publicPath: 'http://localhost:3000/dist/',
         hotOnly: true
     },
     plugins: [
@@ -52,7 +52,8 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './public/index.html',
             path: path.resolve(__dirname, 'dist'),
-            filename: 'index.html'
+            filename: 'index.html',
+            inject: true
         }),
         new webpack.HotModuleReplacementPlugin()
     ]
