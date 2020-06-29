@@ -42,6 +42,11 @@ module.exports = {
         hotOnly: true
     },
     plugins: [
+        new HtmlWebPackPlugin({
+            template: './public/index.html',
+            path: path.resolve(__dirname, 'dist'),
+            filename: 'index.html'
+        }),
         new webpack.HotModuleReplacementPlugin()
     ]
 }
