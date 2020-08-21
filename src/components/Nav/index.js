@@ -5,10 +5,30 @@ import { Link } from 'react-scroll'
 import './nav.scss'
 
 class Nav extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            isExpanded: false
+        };
+    }
+
+    handleToggle(e) {
+        e.preventDefault();
+        this.setState({
+            isExpanded: !this.state.isExpanded
+        });
+    }
     render() {
+        const { isExpanded } = this.state;
+
         return (
             <nav className="nav">
-                <ul>
+                <p
+                    className="nav--mobile-menu"
+                    aria-hidden="true"
+                    onClick={e => this.handleToggle(e)}
+                >MENU</p>
+                <ul className={`collapsed ${isExpanded ? "expanded" : ""}`}>
                     <li className="nav-item">
                         <Link
                             activeClass="active"

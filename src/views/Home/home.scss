@@ -78,8 +78,8 @@
             &:first-child {
                 position: absolute;
                 height: 38rem;
-                top: 5rem;
-                left: -8rem;
+                top: 3rem;
+                left: -12rem;
                 z-index: 1;
             }
 
@@ -87,7 +87,7 @@
                 position: absolute;
                 height: 13rem;
                 z-index: -1;
-                top: 36rem;
+                top: 34rem;
                 left: -35rem;
             }
         }
@@ -123,6 +123,20 @@
                     &::after {
                         width: 8.9rem;
                     }
+                }
+            }
+        }
+
+        &--illustrations {
+            img {
+                &:first-child {
+                    top: 5rem;
+                    left: -8rem;
+                }
+
+                &:nth-child(2) {
+                    top: 36rem;
+                    left: -35rem;
                 }
             }
         }

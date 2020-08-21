@@ -5,6 +5,10 @@
     font-weight: $f-semi-bold;
     width: auto;
 
+    &--mobile-menu {
+        display: none;
+    }
+
     ul {
         list-style-type: none;
         @include flexbox;
@@ -31,6 +35,58 @@
                     left: 45%;
                 }
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .nav {
+        position: relative;
+
+        &--mobile-menu {
+            cursor: pointer;
+            display: block;
+        }
+
+        ul {
+            position: fixed;
+
+            &.collapsed {
+                width: 100%;
+                background-color: $c-background;
+                top: 6rem;
+                left: 0rem;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                align-items: center;
+
+                overflow: hidden;
+                max-height: 0;
+                -moz-transition-duration: 0.4s;
+                -webkit-transition-duration: 0.4s;
+                -o-transition-duration: 0.4s;
+                transition-duration: 0.4s;
+                -moz-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+                -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+                -o-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+                transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+            }
+
+            &.expanded {
+                overflow: hidden;
+                max-height: 500px; /* approximate max height */
+                -moz-transition-duration: 0.4s;
+                -webkit-transition-duration: 0.4s;
+                -o-transition-duration: 0.4s;
+                transition-duration: 0.4s;
+                -moz-transition-timing-function: ease-in;
+                -webkit-transition-timing-function: ease-in;
+                -o-transition-timing-function: ease-in;
+                transition-timing-function: ease-in;
+              }
         }
     }
 }
