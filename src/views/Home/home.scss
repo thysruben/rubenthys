@@ -27,7 +27,6 @@
 
         p {
             &:first-of-type {
-                font-size: 1.8rem;
                 line-height: 2rem;
                 color: $c-secondary;
             }
@@ -80,7 +79,7 @@
                 position: absolute;
                 height: 38rem;
                 top: 5rem;
-                left: -10rem;
+                left: -8rem;
                 z-index: 1;
             }
 
@@ -90,6 +89,41 @@
                 z-index: -1;
                 top: 36rem;
                 left: -35rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .home {
+
+        &--message {
+            h2 {
+                font-size: 6.5rem;
+                line-height: 7rem;
+            }
+
+            p {
+                max-width: 25rem;
+            }
+
+            p, span {
+                font-size: 1.6rem;
+                line-height: 2rem;
+            }
+
+            span {
+                &:nth-child(1) {
+                    &::after {
+                        width: 13.9rem;
+                    }
+                }
+
+                &:nth-child(2) {
+                    &::after {
+                        width: 8.9rem;
+                    }
+                }
             }
         }
     }

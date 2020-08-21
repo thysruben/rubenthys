@@ -5,6 +5,7 @@
     margin: 0 auto;
     font-family: $f-sans-serif;
     color: $c-primary;
+    overflow: hidden;
     @include flexbox;
     @include flex-direction(column);
 
