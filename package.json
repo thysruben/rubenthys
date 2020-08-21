@@ -19,9 +19,12 @@
     "babel-loader": "^8.1.0",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.6.0",
+    "file-loader": "^6.0.0",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.3.0",
+    "node-sass": "^4.14.1",
     "sass-loader": "^8.0.2",
+    "sass-resources-loader": "^2.0.3",
     "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12",
@@ -30,6 +33,10 @@
   "dependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-hot-loader": "^4.12.21"
+    "react-headroom": "^3.0.0",
+    "react-hot-loader": "^4.12.21",
+    "react-scroll": "^1.7.16",
+    "typeface-abril-fatface": "^0.0.72",
+    "typeface-source-sans-pro": "^1.1.5"
   }
 }

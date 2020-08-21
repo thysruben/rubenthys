@@ -1,5 +1,14 @@
 import React from 'react'
-import ReactDom from 'react-dom'
+import { render } from 'react-dom'
+
 import App from './App'
 
-ReactDom.render(<App />, document.getElementById('root'))
+import 'typeface-abril-fatface'
+import 'typeface-source-sans-pro'
+import './styles/variables.scss'
+import './styles/global.scss'
+
+render(
+    <App />,
+    document.getElementById('root')
+)

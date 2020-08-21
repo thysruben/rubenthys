@@ -1,0 +1,41 @@
+* {
+	margin: 0;
+	padding: 0;
+    text-decoration: none;
+	font-size: 1.6rem;
+	line-height: 1.6rem;
+	outline: none;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html, body, #root {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+    background-color: $c-background;
+}
+
+img {
+	border: 0;
+}
+
+a {
+	cursor: pointer
+}
+
+h3 {
+	font-weight: $f-bold;
+	font-size: 1.8rem;
+	line-height: 2.2rem;
+    color: $c-secondary;
+}

@@ -1,0 +1,15 @@
+.skills {
+    height: 70rem;
+    width: 100%;
+    padding-top: 5rem;
+    text-align: center;
+    @include flexbox;
+    @include flex-direction(column);
+
+    &--container {
+        margin-top: 2.5rem;
+        height: 100%;
+        @include flexbox;
+        @include justify-content(space-between);
+    }
+}

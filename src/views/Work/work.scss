@@ -1,0 +1,6 @@
+.work {
+    background-color: lightgray;
+    height: 50rem;
+    width: 100%;
+    @include flexbox;
+}

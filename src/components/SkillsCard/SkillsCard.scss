@@ -1,0 +1,31 @@
+.skills-card {
+    width: 33%;
+    height: 100%;
+
+    h4 {
+        font-family: $f-serif;
+        font-size: 2.6rem;
+        line-height: 5rem;
+        text-align: center;
+        margin-bottom: 2.5rem;
+    }
+
+    &--container {
+        width: 95%;
+        height: 100%;
+        background-size: contain;
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
+
+    &--icons-wrapper {
+        padding-top: 2.5rem;
+        width: 65%;
+        margin: 0 auto;
+        @include flexbox;
+        @include flex-direction(row);
+        @include flex-wrap(wrap);
+        @include align-content(center);
+        @include justify-content(space-between);
+    }
+}

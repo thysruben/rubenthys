@@ -1,0 +1,35 @@
+.nav {
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: $f-semi-bold;
+    width: auto;
+
+    ul {
+        list-style-type: none;
+        @include flexbox;
+        @include flex-direction(row);
+
+        li {
+            margin-left: 2rem;
+            text-transform: uppercase;
+
+            .active {
+                position: relative;
+
+                &::after {
+                    content: "";
+                    display: inline-block;
+                    background-image: url(../../assets/images/nav-active.svg);
+                    background-size: .5rem;
+                    background-repeat: no-repeat;
+                    margin: 0 auto;
+                    height: 10rem;
+                    width: 100%;
+                    position: absolute;
+                    top: 2.5rem;
+                    left: 45%;
+                }
+            }
+        }
+    }
+}
