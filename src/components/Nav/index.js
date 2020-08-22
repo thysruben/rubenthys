@@ -23,7 +23,6 @@ class Nav extends Component {
 
     handleNav(e) {
         e.preventDefault();
-        console.log('handling');
         this.setState({
             isExpanded: false
         })
