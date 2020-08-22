@@ -37,7 +37,7 @@ class Nav extends Component {
                     className="nav--mobile-menu"
                     aria-hidden="true"
                     onClick={e => this.handleToggle(e)}
-                >MENU</p>
+                >{isExpanded ? "CLOSE" : "MENU"}</p>
                 <ul className={`collapsed ${isExpanded ? "expanded" : ""}`}>
                     <li className="nav-item" onClick={e => this.handleNav(e)}>
                         <Link
