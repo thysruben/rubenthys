@@ -1,6 +1,48 @@
 .contact {
-    background-color: lightyellow;
-    height: 50rem;
+    height: auto;
     width: 100%;
-    @include flexbox;
+    padding: 10rem 0;
+
+    &--card {
+        height: auto;
+        padding: 6rem 4rem;
+        max-width: 70rem;
+        min-width: 30rem;
+        background-color: $c-secondary-light;
+        border-radius: 1.5rem;
+        @include flexbox();
+        @include flex-direction(column);
+        @include align-items(center);
+
+        h3 {
+            color: $c-background;
+        }
+    }
+
+    &--socials {
+        margin-top: 3rem;
+        height: auto;
+        width: 14rem;
+        @include flexbox();
+        @include flex-direction(row);
+        @include justify-content(space-between);
+
+        a {
+            img {
+                height: 3rem;
+                width: auto;
+            }
+        }
+    }
+
+    &--container {
+        height: 100%;
+        max-width: 78rem;
+        min-width: 32rem;
+        padding: 0 2rem;
+        margin: 0 auto;
+        @include flexbox();
+        @include flex-direction(column);
+        @include align-items(center);
+    }
 }

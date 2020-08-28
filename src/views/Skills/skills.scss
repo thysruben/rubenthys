@@ -19,14 +19,9 @@
     p {
         font-size: 1.8rem;
         line-height: 1.8rem;
-        margin-top: 1.5rem;
+        margin: 1.5rem 0;
         font-weight: $f-semi-bold;
         color: $c-secondary;
         text-align: center;
-    }
-
-    .skill-card:nth-of-type(2n) {
-        background-image: url('../../assets/icons/skill-card-back-2.svg');
-        background-image: contain;
     }
 }

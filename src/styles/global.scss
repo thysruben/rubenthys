@@ -30,13 +30,18 @@ img {
 }
 
 a {
-	cursor: pointer
+	cursor: pointer;
+	color: $c-primary;
+
+	&:hover {
+		color: $c-secondary;
+	}
 }
 
 h3 {
 	font-family: $f-serif;
-	font-size: 3rem;
-	line-height: 3rem;
+	font-size: 4rem;
+	line-height: 4rem;
     color: $c-primary;
 }
 
