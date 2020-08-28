@@ -54,14 +54,14 @@ class Nav extends Component {
                     <li className="nav-item">
                         <Link
                             activeClass="active"
-                            to="about"
+                            to="work"
                             spy={true}
                             smooth={true}
                             offset={-70}
                             duration={500}
                             onClick={e => this.handleNav(e)}
                         >
-                        About
+                        Work
                         </Link>
                     </li>
                     <li className="nav-item">
@@ -75,19 +75,6 @@ class Nav extends Component {
                             onClick={e => this.handleNav(e)}
                         >
                         Skills
-                        </Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link
-                            activeClass="active"
-                            to="work"
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                            onClick={e => this.handleNav(e)}
-                        >
-                        Work
                         </Link>
                     </li>
                     <li className="nav-item">
