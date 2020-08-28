@@ -8,14 +8,16 @@ class Home extends Component {
     render() {
         return (
             <div className="home" id="home">
-                <div className="home--message">
-                    <p>Hello 👋</p>
-                    <h2>I'm Ruben</h2>
-                    <p>Creative web developer with a love for <span>technology</span> and <span>design</span>.</p>
-                </div>
-                <div className="home--illustrations">
-                    <img src={illustration} alt=""/>
-                    <img src={illustrationFloor} alt=""/>
+                <div className="home--container">
+                    <div className="home--message">
+                        <p>Hello 👋</p>
+                        <h2>I'm Ruben</h2>
+                        <p>Creative web developer with a love for <span>technology</span> and <span>design</span>.</p>
+                    </div>
+                    <div className="home--illustrations">
+                        <img src={illustration} alt=""/>
+                        <img src={illustrationFloor} alt=""/>
+                    </div>
                 </div>
             </div>
         )

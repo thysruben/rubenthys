@@ -19,6 +19,7 @@ class App extends Component {
                 <Content>
                     <Home />
                     <Work />
+                    <div className="work-background-bottom"></div>
                     <Skills />
                     <Contact />
                     <Footer />

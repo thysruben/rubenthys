@@ -1,15 +1,29 @@
 .skills {
     height: 70rem;
     width: 100%;
-    padding-top: 5rem;
-    text-align: center;
-    @include flexbox;
-    @include flex-direction(column);
+    padding: 5rem 0 2rem 0;
+    position: relative;
+    overflow: hidden;
 
     &--container {
-        margin-top: 2.5rem;
         height: 100%;
-        @include flexbox;
-        @include justify-content(space-between);
+        max-width: 78rem;
+        min-width: 32rem;
+        padding: 0 2rem;
+        margin: 0 auto;
+        @include flexbox();
+        @include flex-direction(column);
+        @include align-items(center);
     }
+
+    // &:before {
+    //     content: url('../../assets/images/work-background-bottom.svg');
+    //     width: 100%;
+    //     top: 0rem;
+    //     left: 50%;
+    //     margin-left: -192rem;
+    //     position: absolute;
+    //     height: 60Rem;
+    //     z-index: -1;
+    // }
 }

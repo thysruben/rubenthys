@@ -1,12 +1,9 @@
 .app {
-    max-width: 78rem;
-    min-width: 32rem;
-    padding: 0 2rem;
-    margin: 0 auto;
+    width: 100%;
     font-family: $f-sans-serif;
     color: $c-primary;
     overflow: hidden;
     @include flexbox;
     @include flex-direction(column);
-
+    @include align-items(center);
 }

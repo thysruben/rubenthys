@@ -10,27 +10,9 @@ class Skills extends Component {
     render() {
         return (
             <div className="skills">
-                <h3>Skills</h3>
                 <div className="skills--container">
-                    <SkillsCard
-                        title="Design"
-                    >
-                        {/* <Icon src={Icons.GitHub} alt="GitHub"></Icon>
-                        <Icon src={Icons.VSCode} alt="Visual Studio Code"></Icon>
-                        <Icon src={Icons.Photoshop} alt="Adobe Photoshop"></Icon>
-                        <Icon src={Icons.Sketch} alt="Sketch App"></Icon>
-                        <Icon src={Icons.Trello} alt="Trello"></Icon>
-                        <Icon src={Icons.Apple} alt="Apple"></Icon>
-                        <Icon src={Icons.Illustrator} alt="Adobe Illustrator"></Icon> */}
-                    </SkillsCard>
-                    <SkillsCard
-                        title="Develop"
-                    >
-                    </SkillsCard>
-                    <SkillsCard
-                        title="Tools"
-                    >
-                    </SkillsCard>
+                    <h3>Skills</h3>
+                    <div className="skills-cards"></div>
                 </div>
             </div>
         )
