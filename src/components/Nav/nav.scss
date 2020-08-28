@@ -22,22 +22,42 @@
 
         li {
             text-transform: uppercase;
+            height: auto;
+            width: auto;
 
-            .active {
+            a {
                 position: relative;
 
-                &::after {
-                    content: "";
-                    display: inline-block;
-                    background-image: url(../../assets/images/nav-active.svg);
-                    background-size: .5rem;
-                    background-repeat: no-repeat;
-                    margin: 0 auto;
-                    height: .5rem;
-                    width: .5rem;
-                    position: absolute;
-                    top: 2.5rem;
-                    left: 45%;
+                &:hover {
+                    &:after {
+                        content: '';
+                        display: inline-block;
+                        background-color: $c-primary;
+                        border-radius: 50%;
+                        left: 50%;
+                        margin-left: -.3rem;
+                        height: .6rem;
+                        width: .6rem;
+                        position: absolute;
+                        top: 2.5rem;
+                    }
+                }
+
+                &.active {
+                    position: relative;
+
+                    &:after {
+                        content: '';
+                        display: inline-block;
+                        background-color: $c-primary;
+                        border-radius: 50%;
+                        left: 50%;
+                        margin-left: -.3rem;
+                        height: .6rem;
+                        width: .6rem;
+                        position: absolute;
+                        top: 2.5rem;
+                    }
                 }
             }
         }
@@ -101,9 +121,9 @@
                 @include align-items(center);
 
                 .active {
-                    &::after {
-                        top: 5.5rem;
-                        left: 49.75%;
+                    &:after {
+                        top: 5rem;
+                        left: 49.2%;
                     }
                 }
 
@@ -113,7 +133,10 @@
                     @include align-items(center);
                     width: 100%;
                     height: 100%;
-                    
+
+                    &:hover {
+                        visibility: hidden;
+                    }
                 }
             }
         }
