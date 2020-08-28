@@ -17,7 +17,7 @@ class Work extends Component {
                     <div className="work--cards">
                         <WorkCard
                             company="Enepath"
-                            title="Admin panel for a voice trading platform"
+                            title="Trading voice platform admin panel"
                             location="London"
                             mockImage={enepathMock}
                             altMessage="Enepath admin panel"
