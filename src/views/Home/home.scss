@@ -1,0 +1,165 @@
+.home {
+    width: 100%;
+    height: 70rem;
+    padding-top: 5rem;
+    overflow: hidden;
+    position: relative;
+
+    &--container {
+        max-width: 78rem;
+        min-width: 32rem;
+        padding: 0 2rem;
+        margin: 0 auto;
+        @include flexbox();
+        @include flex-direction(row);
+        @include justify-content(space-between);
+        position: relative;
+    }
+
+    &:after {
+        content: url('../../assets/images/work-background-top.svg');
+        width: 100%;
+        top: 34rem;
+        left: 50%;
+        margin-left: -192rem;
+        position: absolute;
+        height: 60Rem;
+        z-index: -1;
+    }
+
+    &--message {
+        max-width: 40rem;
+        min-width: 20rem;
+        padding-top: 7rem;
+        height: 100%;
+
+        h2 {
+            font-family: $f-serif;
+            font-size: 8rem;
+            line-height: 10rem;
+        }
+
+        p, span {
+            font-weight: $f-bold;
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+            max-width: 34rem;
+        }
+
+        p {
+            &:first-of-type {
+                line-height: 2rem;
+                color: $c-secondary;
+            }
+        }
+
+        span {
+            position: relative;
+
+            &:nth-child(1) {
+                &::after {
+                    content: "";
+                    display: inline-block;
+                    background-image: url(../../assets/images/home-tech-highlight.svg);
+                    background-size: 62%;
+                    background-repeat: no-repeat;
+                    height: 2rem;
+                    width: 15rem;
+                    z-index: -1;
+                    position: absolute;
+                    top: 0.4rem;
+                    left: -0.3rem;
+                }
+            }
+
+            &:nth-child(2) {
+                &::after {
+                    content: "";
+                    display: inline-block;
+                    background-image: url(../../assets/images/home-design-highlight.svg);
+                    background-size: 55%;
+                    background-repeat: no-repeat;
+                    height: 2.2rem;
+                    width: 10rem;
+                    z-index: -1;
+                    position: absolute;
+                    top: 0.4rem;
+                    left: -0.2rem;
+                }
+            }
+        }
+    }
+
+    &--illustrations {
+        position: relative;
+        width: 15rem;
+        height: 100%;
+
+        img {
+            &:first-child {
+                position: absolute;
+                height: 38rem;
+                top: 3rem;
+                left: -12rem;
+                z-index: 1;
+            }
+
+            &:nth-child(2) {
+                position: absolute;
+                height: 18rem;
+                z-index: -1;
+                top: 34rem;
+                left: -35rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .home {
+
+        &--message {
+            h2 {
+                font-size: 6.5rem;
+                line-height: 7rem;
+            }
+
+            p {
+                max-width: 25rem;
+            }
+
+            p, span {
+                font-size: 1.6rem;
+                line-height: 2rem;
+            }
+
+            span {
+                &:nth-child(1) {
+                    &::after {
+                        width: 13.9rem;
+                    }
+                }
+
+                &:nth-child(2) {
+                    &::after {
+                        width: 8.9rem;
+                    }
+                }
+            }
+        }
+
+        &--illustrations {
+            img {
+                &:first-child {
+                    top: 5rem;
+                    left: -8rem;
+                }
+
+                &:nth-child(2) {
+                    top: 36rem;
+                    left: -35rem;
+                }
+            }
+        }
+    }
+}

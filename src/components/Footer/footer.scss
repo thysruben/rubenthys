@@ -1,0 +1,58 @@
+.footer {
+    height: 40rem;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    &--socials {
+        height: auto;
+        width: 10rem;
+        margin-bottom: 5rem;
+        @include flexbox();
+        @include flex-direction(row);
+        @include justify-content(center);
+
+        a {
+            img {
+                height: 3rem;
+                width: 3rem;
+            }
+        }
+    }
+
+    &--text {
+        @include flexbox();
+        @include flex-direction(column);
+        @include align-items(center);
+
+        p {
+            color: $c-gray;
+
+            &:nth-of-type(1) {
+                font-weight: $f-bold;
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+
+    &:before {
+        content: url('../../assets/images/footer-background.svg');
+        width: 100%;
+        top: 5rem;
+        left: 50%;
+        margin-left: -192rem;
+        position: absolute;
+        height: 60Rem;
+        z-index: -1;
+    }
+
+    &--container {
+        padding-top: 10rem;
+        height: 20rem;
+        width: 32rem;
+        margin: 0 auto;
+        @include flexbox();
+        @include flex-direction(column);
+        @include align-items(center);
+    }
+}

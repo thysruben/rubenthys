@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="114px" height="106px" viewBox="0 0 114 106" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Oval Copy 14</title>
+    <defs>
+        <path d="M169.993861,96 C203.656458,96 228,80.6667351 228,47.9996747 C228,15.3326142 208.707762,0 175.045165,0 C141.382568,0 124,15.3329396 124,48 C124,80.6670604 136.331264,96 169.993861,96 Z" id="path-1"></path>
+        <filter x="-6.7%" y="-7.3%" width="115.4%" height="116.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0600961538 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy-3" transform="translate(-1926.000000, -2592.000000)">
+            <g id="Group-2" transform="translate(248.000000, 139.000000)">
+                <g id="Skills" transform="translate(1558.231284, 2276.000000)">
+                    <g id="Oval-Copy-14" transform="translate(0.000000, 181.000000)">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

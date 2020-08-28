@@ -1,0 +1,27 @@
+.skills {
+    height: auto;
+    width: 100%;
+    padding: 5rem 0 2rem 0;
+    position: relative;
+    overflow: hidden;
+
+    &--container {
+        height: 100%;
+        max-width: 78rem;
+        min-width: 32rem;
+        padding: 0 2rem;
+        margin: 0 auto;
+        @include flexbox();
+        @include flex-direction(column);
+        @include align-items(center);
+    }
+
+    p {
+        font-size: 1.8rem;
+        line-height: 1.8rem;
+        margin: 1.5rem 0;
+        font-weight: $f-semi-bold;
+        color: $c-secondary;
+        text-align: center;
+    }
+}

@@ -1,8 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import React from 'react'
+import { render } from 'react-dom'
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+import App from './App'
+
+import 'typeface-abril-fatface'
+import 'typeface-source-sans-pro'
+import './styles/variables.scss'
+import './styles/global.scss'
+
+render(
+    <App />,
+    document.getElementById('root')
+)
