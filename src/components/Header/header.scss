@@ -1,19 +1,11 @@
 .header {
     height: 7rem;
-    max-width: 78rem;
-    min-width: 32rem;
-    @include flexbox;
-    @include justify-content(space-between);
-    @include align-items(center);
-    margin: 0 auto;
-    padding: 0 2rem;
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     background-color: $c-background;
-    opacity: .99;
-    // backdrop-filter: blur(5px);
     z-index: 999;
 
     h1 a {
@@ -21,5 +13,16 @@
         color: $c-primary;
         font-size: 2.2rem;
         line-height: 2.2rem;
+    }
+
+    &--container {
+        max-width: 78rem;
+        min-width: 32rem;
+        height: 100%;
+        @include flexbox;
+        @include justify-content(space-between);
+        @include align-items(center);
+        margin: 0 auto;
+        padding: 0 2rem;
     }
 }

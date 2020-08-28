@@ -8,19 +8,21 @@ class Header extends Component {
     render() {
         return (
             <div className="header">
-                <h1>
-                    <Link
-                        activeClass="active"
-                        to="home"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
-                    >
-                    Ruben
-                    </Link>
-                </h1>
-                <Nav></Nav>
+                <div className="header--container">
+                    <h1>
+                        <Link
+                            activeClass="active"
+                            to="home"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                        >
+                        Ruben
+                        </Link>
+                    </h1>
+                    <Nav></Nav>
+                </div>
             </div>
         )
     }
