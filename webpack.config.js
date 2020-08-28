@@ -86,8 +86,12 @@ module.exports = {
             template: './public/index.html',
             path: path.resolve(__dirname, 'dist'),
             filename: 'index.html',
-            inject: true
+            inject: true,
+            favicon: "./src/assets/favicon.ico"
         }),
+        // new HtmlWebpackPlugin({
+        //     favicon: "./src/assets/favicon.gif"
+        // }),
         new webpack.HotModuleReplacementPlugin()
     ]
 }
