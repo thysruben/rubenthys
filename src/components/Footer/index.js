@@ -9,7 +9,7 @@ class Footer extends Component {
             <div className="footer">
                 <div className="footer--container">
                     <div className="footer--socials">
-                        <a href="https://www.linkedin.com/in/ruben-thys-895545120/" target="_blank">
+                        <a href="https://github.com/thysruben" target="_blank">
                             <img src={githubIcon} alt="Github"/>
                         </a>
                     </div>
