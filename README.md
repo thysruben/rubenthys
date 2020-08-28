@@ -1,5 +1,2 @@
-# [rubenthys.me](https://rubenthys.me)
+# [rubenthys.dev](https://rubenthys.dev)
 My personal landing page
-
-## Framework
-Next.js
