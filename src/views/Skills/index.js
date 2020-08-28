@@ -1,10 +1,8 @@
 import React, { Component } from 'react'
-import SkillsCard from '../../components/SkillsCard'
-// import Icons from '../../utils/Icons'
-// import Icon from '../../components/Icon'
-// import Background1 from '../../assets/images/skills-card-background-1.svg'
+import SkillCards from '../../components/SkillCards'
 
 import './skills.scss'
+import skills from '../../utils/Skills'
 
 class Skills extends Component {
     render() {
@@ -12,7 +10,10 @@ class Skills extends Component {
             <div className="skills">
                 <div className="skills--container">
                     <h3>Skills</h3>
-                    <div className="skills-cards"></div>
+                    <p>My skills and tools I have experience with</p>
+                    <SkillCards
+                        skills={skills}
+                    ></SkillCards>
                 </div>
             </div>
         )

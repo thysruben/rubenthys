@@ -1,5 +1,5 @@
 .skills {
-    height: 70rem;
+    height: auto;
     width: 100%;
     padding: 5rem 0 2rem 0;
     position: relative;
@@ -16,14 +16,17 @@
         @include align-items(center);
     }
 
-    // &:before {
-    //     content: url('../../assets/images/work-background-bottom.svg');
-    //     width: 100%;
-    //     top: 0rem;
-    //     left: 50%;
-    //     margin-left: -192rem;
-    //     position: absolute;
-    //     height: 60Rem;
-    //     z-index: -1;
-    // }
+    p {
+        font-size: 1.8rem;
+        line-height: 1.8rem;
+        margin-top: 1.5rem;
+        font-weight: $f-semi-bold;
+        color: $c-secondary;
+        text-align: center;
+    }
+
+    .skill-card:nth-of-type(2n) {
+        background-image: url('../../assets/icons/skill-card-back-2.svg');
+        background-image: contain;
+    }
 }
