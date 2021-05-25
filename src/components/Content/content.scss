@@ -1,6 +1,6 @@
 .content {
-    width: 100%;
-    margin-top: 6rem;
-    @include flexbox;
-    @include flex-direction(column);
+  width: 100%;
+  margin-top: 6rem;
+  @include flexbox;
+  @include flex-direction(column);
 }
