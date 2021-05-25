@@ -12,21 +12,21 @@ import Footer from '../components/Footer'
 import './app.scss'
 
 class App extends Component {
-    render() {
-        return (
-            <div className="app">
-                <Header />
-                <Content>
-                    <Home />
-                    <Work />
-                    <div className="work-background-bottom"></div>
-                    <Skills />
-                    <Contact />
-                    <Footer />
-                </Content>
-            </div>
-        )
-    }
+  render() {
+    return (
+      <div className="app">
+        <Header />
+        <Content>
+          <Home />
+          <Work />
+          <div className="work-background-bottom"></div>
+          <Skills />
+          <Contact />
+          <Footer />
+        </Content>
+      </div>
+    )
+  }
 }
 
 export default hot(module)(App)

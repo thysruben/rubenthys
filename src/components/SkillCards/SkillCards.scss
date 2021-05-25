@@ -1,42 +1,42 @@
 .skill-cards {
+  @include flexbox();
+  @include flex-direction(row);
+  @include justify-content(center);
+  @include flex-wrap(wrap);
+  height: auto;
+  width: auto;
+  margin-top: 1rem;
+
+  &--card {
     @include flexbox();
-    @include flex-direction(row);
-	@include justify-content(center);
-	@include flex-wrap(wrap);
-    height: auto;
-	width: auto;
-	margin-top: 1rem;
+    @include flex-direction(column);
+    @include align-items(center);
+    padding: 2.5rem 0.5rem;
 
-    &--card {
-        @include flexbox();
-		@include flex-direction(column);
-		@include align-items(center);
-		padding: 2.5rem .5rem;
+    .card-icon {
+      height: 9.6rem;
+      width: 10.4rem;
+      background-image: url('../../assets/icons/skill-card-back-1.svg');
+      background-size: cover;
+      @include flexbox();
+      @include flex-direction(column);
+      @include align-items(center);
+      @include justify-content(space-around);
 
-        .card-icon {
-            height: 9.6rem;
-			width: 10.4rem;
-            background-image: url('../../assets/icons/skill-card-back-1.svg');
-			background-size: cover;
-			@include flexbox();
-			@include flex-direction(column);
-			@include align-items(center);
-			@include justify-content(space-around);
-
-			img {
-				width: 5rem;
-				height: 5rem;
-			}
-		}
-
-        &:nth-of-type(2) {
-            &.card-icon {
-                background-image: url('../../assets/icons/skill-card-back-2.svg');
-            }
-        }
+      img {
+        width: 5rem;
+        height: 5rem;
+      }
     }
 
-    p {
-        color: $c-primary;
+    &:nth-of-type(2) {
+      &.card-icon {
+        background-image: url('../../assets/icons/skill-card-back-2.svg');
+      }
     }
+  }
+
+  p {
+    color: $c-primary;
+  }
 }

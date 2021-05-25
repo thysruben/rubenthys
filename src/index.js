@@ -8,7 +8,4 @@ import 'typeface-source-sans-pro'
 import './styles/variables.scss'
 import './styles/global.scss'
 
-render(
-    <App />,
-    document.getElementById('root')
-)
+render(<App />, document.getElementById('root'))

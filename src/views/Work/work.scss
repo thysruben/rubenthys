@@ -1,32 +1,32 @@
 .work {
-    background-color: $c-secondary-light;
-    height: auto;
+  background-color: $c-secondary-light;
+  height: auto;
+  width: 100%;
+  padding: 5rem 0 0rem 0;
+  position: relative;
+  overflow: hidden;
+
+  &--container {
+    max-width: 78rem;
+    min-width: 32rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+    @include flexbox();
+    @include flex-direction(column);
+    @include align-items(center);
+
+    h3 {
+      color: $c-background;
+    }
+  }
+
+  &--cards {
+    margin-top: 2rem;
     width: 100%;
-    padding: 5rem 0 0rem 0;
-    position: relative;
-    overflow: hidden;
-
-    &--container {
-        max-width: 78rem;
-        min-width: 32rem;
-        padding: 0 2rem;
-        margin: 0 auto;
-        @include flexbox();
-        @include flex-direction(column);
-        @include align-items(center);
-
-        h3 {
-            color: $c-background;
-        }
-    }
-
-    &--cards {
-        margin-top: 2rem;
-        width: 100%;
-        @include flexbox();
-        @include flex-direction(row);
-        @include justify-content(space-around);
-        @include align-items(flex-start);
-        @include flex-wrap(wrap);
-    }
+    @include flexbox();
+    @include flex-direction(row);
+    @include justify-content(space-around);
+    @include align-items(flex-start);
+    @include flex-wrap(wrap);
+  }
 }
