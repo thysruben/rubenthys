@@ -62,11 +62,13 @@
     img {
       height: 100%;
       margin-left: 3rem;
+      border-radius: 1rem;
+      @include box-shadow(-0.6rem, 0.6rem, 2rem, rgba(0, 0, 0, 0.08));
     }
   }
 
   &--disclaimer {
-    padding: 1rem 3rem 3rem 0;
+    padding: 2rem 3rem 3rem 0;
     p {
       color: $c-secondary;
       font-size: 1.6rem;

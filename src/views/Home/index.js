@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import './home.scss'
-import illustration from '../../assets/images/me-illustration.png'
+import illustration from '../../assets/images/me-illustration.webp'
 import illustrationFloor from '../../assets/images/me-illustration-floor.svg'
 
 class Home extends Component {
