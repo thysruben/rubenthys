@@ -1,16 +1,8 @@
 const path = require('path')
-const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = {
   entry: './src/index.js',
-  output: {
-    globalObject: 'this',
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: '/',
-    filename: 'bundle.js',
-  },
   module: {
     rules: [
       {
@@ -18,39 +10,33 @@ module.exports = {
         use: 'html-loader',
       },
       {
-        test: /\.m?js$/,
-        exclude: /node_modules/,
+        test: /\.m?js$/i,
+        include: path.resolve(__dirname, 'src'),
         loader: 'babel-loader',
         options: {
           presets: ['@babel/preset-env'],
         },
       },
       {
-        test: /\.css$/,
+        test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /.\.(png|svg|webp)$/,
-        use: {
-          loader: 'file-loader',
-          options: {
-            name: '[name].[ext]',
-            outputPath: 'assets/',
-          },
+        test: /.\.(png|svg|webp)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'images/[hash][ext][query]',
         },
       },
       {
-        test: /\.(woff|woff2|eot|ttf|otf)$/,
-        use: {
-          loader: 'file-loader',
-          options: {
-            name: '[name].[ext]',
-            outputPath: 'fonts/',
-          },
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'fonts/[hash][ext][query]',
         },
       },
       {
-        test: /\.scss$/,
+        test: /\.scss$/i,
         use: [
           'style-loader',
           'css-loader',
@@ -71,14 +57,7 @@ module.exports = {
   resolve: {
     extensions: ['.wasm', '.ts', '.tsx', '.mjs', '.cjs', '.js', '.json'],
   },
-  devtool: 'inline-source-map',
-  devServer: {
-    contentBase: './dist',
-    port: 3000,
-    hotOnly: true,
-  },
   plugins: [
-    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: './public/index.html',
       path: path.resolve(__dirname, 'dist'),
@@ -86,6 +65,25 @@ module.exports = {
       inject: true,
       favicon: './src/assets/favicon.ico',
     }),
-    new webpack.HotModuleReplacementPlugin(),
   ],
+  output: {
+    globalObject: 'this',
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: '/',
+    filename: '[name].[contenthash].js',
+    clean: true,
+  },
+  optimization: {
+    moduleIds: 'deterministic',
+    runtimeChunk: 'single',
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendors',
+          chunks: 'all',
+        },
+      },
+    },
+  },
 }
