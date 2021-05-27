@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Personal Website",
   "scripts": {
-    "build": "webpack --mode production",
-    "dev": "webpack serve --mode development"
+    "build": "webpack --config webpack.prod.js",
+    "dev": "webpack serve --open --config webpack.dev.js"
   },
   "main": "index.js",
   "repository": "https://github.com/thysruben/rubenthys.git",
@@ -26,16 +26,17 @@
     "style-loader": "^2.0.0",
     "webpack": "^5.0.0",
     "webpack-cli": "^4.0.0",
-    "webpack-dev-server": "^3.0.0"
+    "webpack-dev-server": "^3.0.0",
+    "webpack-merge": "^5.7.3"
   },
   "dependencies": {
+    "@fontsource/abril-fatface": "^4.3.0",
+    "@fontsource/source-sans-pro": "^4.3.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-headroom": "^3.0.0",
     "react-hot-loader": "^4.12.21",
-    "react-scroll": "^1.7.16",
-    "typeface-abril-fatface": "^1.1.13",
-    "typeface-source-sans-pro": "^1.1.5"
+    "react-scroll": "^1.7.16"
   },
   "resolutions": {
     "chokidar": "^3.4.0",

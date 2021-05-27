@@ -3,8 +3,8 @@ import React, { Component } from 'react'
 import WorkCard from './../../components/WorkCard'
 
 import './work.scss'
-import enepathMock from '../../assets/images/enepath-config.png'
-import osocMock from '../../assets/images/smart-flanderss.png'
+import enepathMock from '../../assets/images/enepath-config.webp'
+import osocMock from '../../assets/images/smart-flanders.webp'
 
 class Work extends Component {
   render() {
