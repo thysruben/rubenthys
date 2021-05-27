@@ -1,0 +1,6 @@
+## This rule redirects to an external API, signing requests with a secret
+[[redirects]]
+  from = "/cv"
+  to = "https://resume.io/r/YSYK2t7nm"
+  status = 200
+  force = true # COMMENT: ensure that we always redirect
