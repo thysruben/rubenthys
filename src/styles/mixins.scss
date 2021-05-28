@@ -151,3 +151,11 @@
     box-shadow: $top $left $blur $color;
   }
 }
+
+// Backdrop-filter
+@mixin backdrop-filter($filter-type, $filter-amount) {
+  -webkit-backdrop-filter: $filter-type + unquote('(#{$filter-amount})');
+  -moz-backdrop-filter: $filter-type + unquote('(#{$filter-amount})');
+  -ms-backdrop-filter: $filter-type + unquote('(#{$filter-amount})');
+  backdrop-filter: $filter-type + unquote('(#{$filter-amount})');
+}
