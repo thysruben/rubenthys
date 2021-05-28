@@ -9,13 +9,17 @@ class Footer extends Component {
       <div className="footer">
         <div className="footer--container">
           <div className="footer--socials">
-            <a href="https://github.com/thysruben" target="_blank">
+            <a
+              href="https://github.com/thysruben"
+              rel="noopener"
+              target="_blank"
+            >
               <img src={githubIcon} alt="Github" />
             </a>
           </div>
           <div className="footer--text">
             <p>Design and coding done by me! 😎</p>
-            <a href="mailto:hello@rubenthys.dev" target="-blank">
+            <a href="mailto:hello@rubenthys.dev" rel="noopener" target="_blank">
               hello@rubenthys.dev
             </a>
           </div>

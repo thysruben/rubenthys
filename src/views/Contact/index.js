@@ -13,14 +13,23 @@ class Contact extends Component {
           <div className="contact--card">
             <h3>Get in touch with me!</h3>
             <div className="contact--socials">
-              <a href="https://www.linkedin.com/in/thysruben/" target="_blank">
+              <a
+                href="https://www.linkedin.com/in/thysruben/"
+                rel="noopener"
+                target="_blank"
+              >
                 <img src={linkedInIcon} alt="LinkedIn" />
               </a>
               <a href="mailto:hello@rubenthys.dev">
-                <img src={mailIcon} alt="Mail" target="_blank" />
+                <img src={mailIcon} alt="Mail" rel="noopener" target="_blank" />
               </a>
               <a href="https://twitter.com/rubenthys22">
-                <img src={twitterIcon} alt="Twitter" target="_blank" />
+                <img
+                  src={twitterIcon}
+                  alt="Twitter"
+                  rel="noopener"
+                  target="_blank"
+                />
               </a>
             </div>
           </div>
