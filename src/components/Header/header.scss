@@ -6,8 +6,6 @@
   left: 0;
   right: 0;
   background-color: $c-background;
-  opacity: 95%;
-  @include backdrop-filter(blur, 1.5rem);
   z-index: 999;
 
   h1 a {
