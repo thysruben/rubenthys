@@ -11,7 +11,7 @@ class Home extends Component {
         <div className="home--container">
           <div className="home--message">
             <p>Hello 👋</p>
-            <h2>I'm Ruben</h2>
+            <h1>I'm Ruben</h1>
             <p>
               Creative web developer with a taste for <span>technology</span>{' '}
               and <span>design.</span>
