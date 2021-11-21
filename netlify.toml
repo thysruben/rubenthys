@@ -2,5 +2,5 @@
 [[redirects]]
   from = "/cv"
   to = "https://resume.io/r/YSYK2t7nm"
-  status = 302
+  status = 200
   force = true # COMMENT: ensure that we always redirect
