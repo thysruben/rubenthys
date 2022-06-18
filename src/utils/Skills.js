@@ -8,6 +8,9 @@ import sass from '../assets/icons/sass.svg'
 import nodeJS from '../assets/icons/nodejs.svg'
 import photoshop from '../assets/icons/photoshop.svg'
 import java from '../assets/icons/java.svg'
+import python from '../assets/icons/python.svg'
+import figma from '../assets/icons/figma.svg'
+import scikit from '../assets/icons/scikit.svg'
 
 const Skills = [
   {
@@ -17,6 +20,10 @@ const Skills = [
   {
     skillName: 'C#',
     icon: csharp,
+  },
+  {
+    skillName: 'Python',
+    icon: python,
   },
   {
     skillName: 'React',
@@ -35,6 +42,10 @@ const Skills = [
     icon: sass,
   },
   {
+    skillName: 'Figma',
+    icon: figma,
+  },
+  {
     skillName: 'Sketch',
     icon: sketch,
   },
@@ -49,6 +60,10 @@ const Skills = [
   {
     skillName: 'Java',
     icon: java,
+  },
+  {
+    skillName: 'Scikit',
+    icon: scikit,
   },
 ]
 
