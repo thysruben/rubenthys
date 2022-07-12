@@ -4,3 +4,8 @@
   to = "https://resume.io/r/YSYK2t7nm"
   status = 302
   force = true # COMMENT: ensure that we always redirect
+[[redirects]]
+  from = "/logseq-bap"
+  to = "https://thysruben.github.io/logseq/#/page/bap%20notes"
+  status = 302
+  force = true # COMMENT: ensure that we always redirect
